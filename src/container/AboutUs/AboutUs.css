@@ -1,0 +1,81 @@
+.dizi__aboutus {
+  position: relative;
+}
+
+.dizi__aboutus-overlay {
+  position: absolute;
+  inset: 0;
+}
+
+.dizi__aboutus-overlay img {
+  width: 391px;
+  height: 415px;
+  z-index: 0;
+}
+
+.dizi__aboutus-content {
+  width: 100%;
+  z-index: 2;
+}
+
+.dizi__aboutus-content_about {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+
+  text-align: right;
+}
+
+.dizi__aboutus-content_knife {
+  margin: 2rem 4rem;
+}
+
+.dizi__aboutus-content_knife img {
+  height: 910px;
+}
+
+.dizi__aboutus-content_history {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+
+  text-align: left;
+}
+
+.dizi__aboutus-content_about p,
+.dizi__aboutus-content_history p {
+  margin: 2rem 0;
+  color: var(--color-grey);
+}
+
+@media screen and (min-width: 2000px) {
+  .dizi__aboutus-content_knife img {
+    height: 1110px;
+  }
+
+  .dizi__aboutus-content_about p,
+  .dizi__aboutus-content_history p {
+    margin: 4rem 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .dizi__aboutus-content {
+    flex-direction: column;
+  }
+
+  .dizi__aboutus-content_knife {
+    margin: 4rem 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .dizi__aboutus-overlay img {
+    width: 80%;
+    height: 320px;
+  }
+}
